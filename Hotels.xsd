@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-		   xmlns="http://venus.sod.asu.edu/WSRepository/xml" 
-		   targetNamespace="http://venus.sod.asu.edu/WSRepository/xml" elementFormDefault="qualified" 
+		   xmlns="http://example.org/hotels" 
+		   targetNamespace="http://example.org/hotels" elementFormDefault="qualified" 
 		   attributeFormDefault="unqualified">
 	<xsd:element name="Hotels">
 		<xsd:complexType>
@@ -13,7 +13,7 @@
 							<xsd:element name="Phone" minOccurs="1" maxOccurs="unbounded">
 								<xsd:simpleType>
 									<xsd:restriction base="xsd:string">
-										<xsd:pattern value="\d{3}\-\d{3} \d{4}"/>
+										<xsd:pattern value="\d{3}\-\d{3}-\d{4}"/>
 									</xsd:restriction>
 								</xsd:simpleType>
 							</xsd:element>
